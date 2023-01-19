@@ -1,0 +1,18 @@
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+#Обозначил каждый банк в переменную, т.к не совсем понимаю 
+#как можно с помощью per_cent.values 
+# достать значения и преобразовать их в числа
+TKB = float(5.6 / 100)
+SKB = float(5.9 / 100)
+VTB = float(4.28 / 100)
+SBER = float(4.0 / 100)
+
+vklad = int(input('Какую сумму вы хотите внести на процент?:'))
+print('ТКБ: ', TKB * vklad)
+print('СКБ: ', SKB * vklad)
+print('VTB: ', VTB * vklad)
+print('СБЕР: ', SBER * vklad )
+#Не совсем понял зачем нужно было именно
+#deposit[i], но сделал вот так.
+deposit = {TKB * vklad, SKB * vklad, VTB * vklad, SBER * vklad}
+print(max(deposit))
